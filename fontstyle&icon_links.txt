@@ -1,0 +1,28 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+
+green color #49c1a2
+
+dark blue color #0d2d3e
+lite blue color #c4d3dc
+rose hover color #c53058
+
+
+#d62828 new red hover
+f77f00 new yellow hover
+
+
+
+
+<script src="https://kit.fontawesome.com/9cd98edc8b.js" crossorigin="anonymous"></script>

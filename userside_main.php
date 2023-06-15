@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>User Profile</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+        background-color: white;
+    }
+    h1{
+        font-family: 'Lato', sans-serif;
+        margin-top: 30px;
+        color: #0d2d3e;
+    }
+    img{
+        width: 600px;
+        height: auto;
+        position: relative;
+        padding-top: 60px;
+    }
+</style>
+<body>
+    <?php
+        error_reporting(0);
+        session_start();
+        $connection = mysqli_connect("localhost","root","","realestatemanagement");
+        $id = $_SESSION['id'];
+        $sql = "SELECT * FROM accounts WHERE id='".$id."'";
+        $result = mysqli_query($connection,$sql);
+        $row = mysqli_fetch_array($result);
+    ?>
+    <center>
+    <img src="welcomeimage.jpg" alt="Welcome image">
+    <div class="text">
+        <h1> Welcome <?php echo $row['username'];?> to our Real Estate Management System</h1>
+    </div>
+    </center>
+</body>
+</html>
